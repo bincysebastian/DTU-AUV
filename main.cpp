@@ -1,15 +1,15 @@
-#include <opencv2/highgui.hpp>
+#include<opencv2/highgui.hpp>
 #include<opencv2/imgcodecs.hpp>
 #include<opencv2/imgproc.hpp>
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 using namespace cv;
 
 int main()
 { Mat imgHSV,mask;
-int hmin=78,smin=176,vmin=125;
-int hmax=82,smax=217,vmax=138;
+int hmin=70,smin=160,vmin=115;
+int hmax=86,smax=210,vmax=134;
  string path="sample.jpeg";
  Mat img = imread(path);
 cvtColor(img,imgHSV,COLOR_BGR2HSV);
